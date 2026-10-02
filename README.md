@@ -15,40 +15,32 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 
 
-# Hi, I'm Thilak 👋
+# Hi, I'm Thilak
 
-I started out as a mechanical engineer, working with vehicle components and assembly lines. Somewhere along the way I noticed that the hardest problems weren't mechanical. They were about information: thousands of records nobody could search properly, failure reports written ten different ways, answers that existed in the data but took days to find.
+I trained as a mechanical engineer and spent my first years working with vehicle components and assembly line data. The problems I kept running into weren't mechanical. They were about information: records that were hard to search, failure reports written in many different ways, and answers that existed in the data but took a long time to find.
 
-That's what pulled me into data science, and it's what most of the work here is about: **making messy, real-world information searchable, understandable and useful.**
+That's what led me to data science. Most of my projects deal with taking messy, real-world text and making it searchable and easier to understand.
 
----
+## Projects
 
-## 🔍 What I'm working on
+### Auto Safety Pro
 
-### Auto Safety Pro: finding vehicle defects in plain language
-Public vehicle safety databases hold hundreds of thousands of recalls and complaints, but they only support keyword search. Search "engine stall" and you miss every complaint that says "loss of propulsion" instead.
+Public vehicle safety databases contain hundreds of thousands of recalls and complaints, but they only support keyword search. If you search for "engine stall", you miss complaints that describe the same problem as "loss of propulsion".
 
-For my master's thesis, I built a system that understands both: it combines classic keyword search (BM25) with semantic search (sentence embeddings + FAISS), then uses a language model (Flan-T5) to summarise what the top records actually say. You can ask *"What are common issues with the 2016 Tesla Model S?"* and get a grounded answer, with the original records shown underneath so nothing is taken on trust.
+For my master's thesis, I built a search system that combines keyword search (BM25) with semantic search (sentence embeddings and FAISS). A language model (Flan-T5) then summarises the most relevant records. You can ask something like "What are common issues with the 2016 Tesla Model S?" and see a short summary along with the original records it was based on.
 
-→ [View the project](https://github.com/Thilakraju/auto-safety-pro)
+[View the project](https://github.com/Thilakraju/auto-safety-pro)
 
-### Deepfake Detection: teaching a model to watch, not just look
-Most fake videos can fool a single-frame check. So with two classmates, I built a detector that looks at both: a ResNeXt network examines each frame, and an LSTM watches how those frames change over time. The longer it watches, the better it gets, from 84% accuracy at 10 frames to 97.76% at 100. It runs in a small web app where you upload a video and get a verdict with a confidence score.
+### Deepfake Detection
 
-→ [View the project](https://github.com/Thilakraju/deepfake-detection)
+Together with two classmates, I built a model that detects manipulated videos. A ResNeXt network extracts features from each frame and an LSTM models how those frames change over time. Accuracy improved with longer sequences, from 84% at 10 frames to 97.76% at 100 frames on FaceForensics++. The model runs in a small web app where you can upload a video and get a prediction with a confidence score.
 
----
+[View the project](https://github.com/Thilakraju/deepfake-detection)
 
-## 🧭 What connects these projects
+## Tools
 
-- **Real data, not toy datasets.** Government safety records, public deepfake benchmarks, messy free text.
-- **Explainability matters.** Both projects show *why* a result appeared, not just the result.
-- **Built to be used.** Each one ends in an interface someone could actually open and try.
+Python, PyTorch, Hugging Face Transformers, Sentence-Transformers, FAISS, SQL, Power BI, FastAPI
 
-## 🛠️ Tools I reach for
+## Contact
 
-Python · PyTorch · Hugging Face Transformers · Sentence-Transformers · FAISS · SQL · Power BI · FastAPI
-
----
-
-📫 Always happy to talk about retrieval, RAG or turning data into something people can use: [LinkedIn](https://linkedin.com/in/thilak-raju) · thilakraju97@gmail.com
+[LinkedIn](https://linkedin.com/in/thilak-raju) | thilakraju97@gmail.com
